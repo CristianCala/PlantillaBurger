@@ -63,7 +63,6 @@ header{
 
 .boton-oscuro{
 	background-color: white !important;
-	border: 2px solid black !important;
 	border-radius: 8px;
 	color: black !important;
 	font-size: 1rem !important;
@@ -73,4 +72,17 @@ header{
 	background-color: black !important;
 	color: white !important;
 	border: 2px solid white !important;
+}
+
+.boton-claro{
+	background-color: black !important;
+	border-radius: 8px;
+	color: white !important;
+	font-size: 1rem !important;
+}
+
+.boton-claro:hover{
+	background-color: white !important;
+	color: black !important;
+	border: 2px solid black !important;
 }
