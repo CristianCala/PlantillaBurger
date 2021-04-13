@@ -8,17 +8,21 @@
 
 /*Paleta de colores*/
 :root{
-	--main-color:;
-	--oscuro-color:;
-	--claro-color:;
+	--main-color: #2F6169;
+	--oscuro-color: #89E218;
+	--claro-color: #EC571E;
 }
 
 html{
 	background-color: #F4D4C2;
 }
 
+.fondo{
+	background-color: var(--main-color);
+}
+
 .navbar-color {
-	background-color: #000;
+	background-color: var(--main-color);
 }
 
 .animacion-border{
@@ -26,7 +30,7 @@ html{
 }
 
 .animacion-border:hover{
-	color: grey !important;
+	color: var(--claro-color) !important;
 }
 
 .animacion-border:after{
@@ -45,14 +49,14 @@ html{
 }
 
 header{
-	width: 100%;
-	height: 1000px;
+/*	width: 100%;
+	height: 1000px;*/
 	background-image: url('img.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	background-size: cover;
-	position: relative;
-	overflow: hidden;
-	color:#FFFFFFFF;
-	text-align: center;
+	background-color: #66999;
 }
 
 .separador{
@@ -66,6 +70,7 @@ header{
 	border-radius: 8px;
 	color: black !important;
 	font-size: 1rem !important;
+	border: 2px solid transparent !important;
 }
 
 .boton-oscuro:hover{
@@ -79,6 +84,7 @@ header{
 	border-radius: 8px;
 	color: white !important;
 	font-size: 1rem !important;
+	border: 2px solid transparent !important;
 }
 
 .boton-claro:hover{
