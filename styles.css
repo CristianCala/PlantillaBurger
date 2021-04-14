@@ -49,8 +49,6 @@ html{
 }
 
 header{
-/*	width: 100%;
-	height: 1000px;*/
 	background-image: url('img.jpg');
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -63,6 +61,17 @@ header{
   border-top: 8px solid white;
   border-radius: 5px;
   height: 5%;
+}
+
+hr{
+	margin-left: auto !important;
+	margin-right: auto !important;
+	width: 90px;
+	border-top-width: 2px !important;
+	color: white !important;
+	height: 5px !important;
+	border-radius: 4px;
+	opacity: 1 !important;
 }
 
 .boton-oscuro{
@@ -93,17 +102,11 @@ header{
 	border: 2px solid black !important;
 }
 
-hr{
-	margin-left: auto !important;
-	margin-right: auto !important;
-	width: 90px;
-	border-top-width: 2px !important;
-	color: white !important;
-	height: 5px !important;
-	border-radius: 4px;
-	opacity: 1 !important;
-}
 
 .efecto-hover:hover{
 	color: var(--verde-color);
+}
+
+.fondo-naranja{
+	background-color: var(--naranja-color);
 }
