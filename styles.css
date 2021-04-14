@@ -9,8 +9,8 @@
 /*Paleta de colores*/
 :root{
 	--main-color: #2F6169;
-	--oscuro-color: #89E218;
-	--claro-color: #EC571E;
+	--verde-color: #89E218;
+	--naranja-color: #EC571E;
 }
 
 html{
@@ -18,8 +18,8 @@ html{
 }
 
 .fondo{
-	background-color: var(--main-color);
-}
+	background-color: var(--main-color)
+;}
 
 .navbar-color {
 	background-color: var(--main-color);
@@ -30,7 +30,7 @@ html{
 }
 
 .animacion-border:hover{
-	color: var(--claro-color) !important;
+	color: var(--naranja-color) !important;
 }
 
 .animacion-border:after{
@@ -45,7 +45,7 @@ html{
 
 .animacion-border:hover:after{
     right: 0;
-    border-bottom: 3px solid grey;
+    border-bottom: 3px solid var(--naranja-color);
 }
 
 header{
@@ -91,4 +91,19 @@ header{
 	background-color: white !important;
 	color: black !important;
 	border: 2px solid black !important;
+}
+
+hr{
+	margin-left: auto !important;
+	margin-right: auto !important;
+	width: 90px;
+	border-top-width: 2px !important;
+	color: white !important;
+	height: 5px !important;
+	border-radius: 4px;
+	opacity: 1 !important;
+}
+
+.efecto-hover:hover{
+	color: var(--verde-color);
 }
