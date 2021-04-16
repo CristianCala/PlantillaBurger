@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Demo</title>
 	<!-- Estilos propios -->
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="css/styles.css">
 	<!-- Font Awesome icons (free version)-->
 	<script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
 	<!-- Bootstrap CSS -->
@@ -112,17 +112,22 @@
 
 		<section class="fondo">
 			<div class="container text-center py-5">
-				<h1 class="text-white text-center py-4 text-strech ">PRUEBA NUESTRO MENÚ</h1>
+				<h3 class="text-white text-center py-4 text-strech display-6 ">PRUEBA NUESTRO MENÚ</h3>
 				<hr>
 			</div>
 			<article class="container py-5">
 				<div class="row">
 					<div class="col-md-6 col-12 px-5 mb-5" >
 						<div class="card" >
+						  <img
+						    src="burger2.jpg"
+						    class="card-img-top"
+						    alt="..."
+						  />
 						  <div class="card-body container ">
 						  	<hgroup>
-							    <h2 class="card-title text-center pt-5 text-strech">COMBO A</h2>
-							    <h4 class="text-white fondo-naranja text-center mt-5 mx-5">OFERTA</h4>
+							    <h2 class="card-title text-center pt-2 text-strech">COMBO A</h2>
+							    <h4 class="text-white fondo-naranja text-center mt-4 mx-5">OFERTA</h4>
 						  	</hgroup>
 						  	<h5 class="text-center font-weight-bolder pt-4">INGREDIENTES</h5>
 						  	<p class="text-center text-muted">
@@ -132,18 +137,21 @@
 						  	<p class="text-center text-muted">
 						  		Lorem ipsum dolor sit, amet consectetur adipisicing elit.  
 						  	</p>
-						  	<p class="text-center pt-3 pb-4" style="margin-left: 5rem; margin-right: 5rem;">
-						  		Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Esse quisquam quod provident, nulla modi non assumenda saepe ad veritatis alias nisi, fugit, numquam. 
-						  	</p>
+
 						  </div>
 						</div>
 					</div>
 					<div class="col-md-6 col-12 px-5" >
 						<div class="card" >
+						  <img
+						    src="burger3.jpg"
+						    class="card-img-top"
+						    alt="..."
+						  />
 						  <div class="card-body">
 						  	<hgroup>
-							    <h2 class="card-title text-center pt-5 text-strech">COMBO B</h2>
-							    <h4 class="text-white fondo-naranja text-center mt-5 mx-5">OFERTA</h4>
+							    <h2 class="card-title text-center pt-2 text-strech">COMBO B</h2>
+							    <h4 class="text-white fondo-naranja text-center mt-4 mx-5">OFERTA</h4>
 						  	</hgroup>
 						  	<h5 class="text-center font-weight-bolder pt-4">INGREDIENTES</h5>
 						  	<p class="text-center text-muted">
@@ -153,9 +161,7 @@
 						  	<p class="text-center text-muted">
 						  		Lorem ipsum dolor sit, amet consectetur adipisicing elit.  
 						  	</p>
-						  	<p class="text-center pt-3 pb-4" style="margin-left: 5rem; margin-right: 5rem;">
-						  		Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Esse quisquam quod provident, nulla modi non assumenda saepe ad veritatis alias nisi, fugit, numquam. 
-						  	</p>
+
 						  </div>
 						</div>
 					</div>
@@ -164,16 +170,126 @@
 		</section>
 
 		<section class="bg-ligth py-5">
-			<h1 class="text-center pt-2">RESERVA AHORA</h1>
+			<h3 class="text-center display-6 pt-2 font-weight-bold">RESERVA AHORA</h3>
 			<hr class="text-dark">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-6">
+						<div class="card" >
+						  <div class="card-body container fondo-tabla ">
+						  	<h3 class="text-white text-center display-6">TABLA DE ORDEN</h3>
+						  	<hr>
+					        <form class="p-4">
+					            <div class="form-group">
+					                <label class="text-white mx-5">Nombre</label>
+									<div class="input-group mb-3">
+									  <div class="input-group-prepend espacio-icono px-1 bg-dark">
+									    <span class="fas fa-user text-white mx-2 mt-2"></span>
+									  </div>
+									  <input class="form-control" type="text" placeholder="Nombre">
+									</div>
+					            </div>
+					            <div class="form-group">
+					                <label class="text-white mx-5">E-mail</label>
+									<div class="input-group mb-3">
+									  <div class="input-group-prepend bg-dark px-1 espacio-icono">
+									    
+									    <span class="far fa-envelope text-white mx-2 mt-2"></span>
+									  </div>
+									  <input class="form-control" type="text" placeholder="ejemplo@gmail.com">
+									</div>
+					            </div>
+					            <div class="form-group">
+					                <label class="text-white mx-5">Teléfono</label>
+									<div class="input-group mb-3">
+									  <div class="input-group-prepend bg-dark px-3 espacio-icono">
+									    
+									    <span class="fas fa-mobile-alt text-white mx- mt-2"></span>
+									  </div>
+									  <input class="form-control" type="text" placeholder="0400-000-0000">
+									</div>
+					            </div>
+					            <div class="form-group">
+					              <label class="text-white mx-5">Horario</label>
+									<div class="input-group mb-3">
+									  <div class="input-group-prepend bg-dark px-1 espacio-icono">
+									    
+									    <span class="fas fa-calendar-alt text-white mx-2 mt-2"></span>
+									  </div>
+									  <input type="text" class="form-control" id="input">
+									</div>
+					            </div>
+					            <div class="form-group pt-4">
+					            	<div class="container">
+					            		<div class="row">
+					            			<div class="col-6"> 
+												<select class="form-select" aria-label="Default select example">
+												  <option selected>Hora</option>
+												  <option value="1">10:00 am</option>
+												  <option value="2">11:00 am</option>
+												  <option value="3">12:00 am</option>
+												  <option value="4">1:00 pm </option>
+												  <option value="5">2:00 pm</option>
+												</select>						  
+					            			</div>
+					            			<div class="col-6">
+												<select class="form-select" aria-label="Default select example">
+												  <option selected>No. Personas</option>
+												  <option value="1">1 Persona</option>
+												  <option value="2">2 Personas</option>
+												  <option value="3">3 Personas</option>
+												  <option value="4">4 Personas </option>
+												  <option value="5">5 Personas</option>
+												  <option value="6">6 Personas</option>
+												  <option value="7">Más</option>
+												</select>			
 
+					            			</div>
+					            		</div>
+					            	</div>
+		
+					            </div>
+					            <div class="form-group px-4 pt-3">
+					                <label class="text-white">Descripción</label>
+					                <textarea class="form-control" rows="3" placeholder="Descripción"></textarea>
+					            </div>
+
+					            <div class="container pt-3 text-white">
+					            	<button class="btn btn-block  font-weight-bold text-white boton-claro"> <i class="fas fa-save fa-lg mx-2"></i>Enviar</button>
+					            </div>
+					        </form>
+						  </div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6">
+						<div class="card" >
+						  <div class="card-body container fondo wh">
+						  	<h3 class="text-white text-center display-6">RESERVE UNA MESA</h3>
+						  	<hr>
+						  	<div class="container text-white pt-4">
+						  		<h3>Haga la reserva de una mesa para comer o beber</h3>
+
+						  		<h6 class="pt-2 display-7">
+						  			Lorem ipsum dolor, sit amet consectetur, adipisicing elit.
+						  		</h6>
+
+						  		<p class="py-4" style="text-align: justify;">
+						  			Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Recusandae beatae commodi omnis earum nostrum debitis labore placeat voluptatibus quis cumque minima esse porro accusantium mollitia, exercitationem facilis facere iusto ut.
+						  		</p>
+						  	</div>
+
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
 
 			
 		</section>
 
 		<section>
-			<h1 class="text-center">NUESTROS ALIADOS</h1>
-			<hr class="text-dark">
+			<h3 class="text-center display-6">NUESTROS ALIADOS</h3>
+			<hr class="text-muted">
 
 			<ul class="pt-4 container">
 				<div class="row justify-content-center">
@@ -191,7 +307,7 @@
 	</main>
 
 	<footer class="fondo text-center">
-		<div class="container">
+		<div class="container py-3">
 			<div class="row">
 
 				<div class="col-lg-6 col-md-12 mb-4 mb-md-0">
@@ -230,6 +346,10 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 	<!-- MDB -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js" ></script>
+	<!-- Para el datepicker -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/rome.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>
