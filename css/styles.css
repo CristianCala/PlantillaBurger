@@ -81,31 +81,26 @@ hr{
 }
 
 .boton-oscuro{
-	background-color: white !important;
-	border-radius: 8px;
+	background-color: transparent !important;
 	color: black !important;
-	font-size: 1rem !important;
-	border: 2px solid transparent !important;
+	border: 2px solid black !important;
 }
 
 .boton-oscuro:hover{
 	background-color: black !important;
 	color: white !important;
-	border: 2px solid white !important;
 }
 
-.boton-claro{
-	background-color: black !important;
-	border-radius: 8px;
-	color: white !important;
-	font-size: 1rem !important;
+.boton-blanco{
+	background-color: white !important;
+	color: black !important;
 	border: 2px solid transparent !important;
 }
 
-.boton-claro:hover{
-	background-color: white !important;
-	color: black !important;
-	border: 2px solid black !important;
+.boton-blanco:hover{
+	background-color: transparent !important;
+	color: white !important;
+	border: 2px solid white !important;
 }
 
 
@@ -128,4 +123,45 @@ hr{
 
 .fondo-tabla{
 	background-image: url('../tabla.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #669999;
+
 }
+
+@media (min-width: 1px) and (max-width: 768px)  {
+	
+.orden-mesa{
+	position: relative;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.orden-mesa::after{
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -40px;
+	border-top: 20px solid var(--main-color);
+	border-right: 20px solid transparent;
+	border-left: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	right: calc(50% - 20px); 
+}
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+
+.orden-mesa{
+	padding-top: 1rem;
+}
+}
+
+@media (min-width: 992px) and (max-width: 2400px){
+
+.orden-mesa{
+	padding-top: 6rem;
+}
+
+}
+
