@@ -55,6 +55,7 @@
 .rd-day-body:hover{
   background-color: grey;
   border-radius: 50%;
+  color: white;
 }
 
 .rd-day-selected,

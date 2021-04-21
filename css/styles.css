@@ -13,18 +13,11 @@
 	--main-color: #2F6169;
 	--verde-color: #89E218;
 	--naranja-color: #EC571E;
-}
-
-html{
-	background-color: #F4D4C2;
+	--dark-color: #262626;
 }
 
 .fondo{
-	background-color: var(--main-color)
-;}
-
-.navbar-color {
-	background-color: var(--main-color);
+	background-color: var(--dark-color);
 }
 
 .animacion-border{
@@ -142,7 +135,7 @@ hr{
 	display: block;
 	position: absolute;
 	bottom: -40px;
-	border-top: 20px solid var(--main-color);
+	border-top: 20px solid var(--dark-color);
 	border-right: 20px solid transparent;
 	border-left: 20px solid transparent;
 	border-bottom: 20px solid transparent;
@@ -165,3 +158,6 @@ hr{
 
 }
 
+.form-control:focus{
+	border: 2px solid var(--dark-color) !important;
+}
