@@ -60,6 +60,7 @@ header{
 
 .text-strech{
 	transform:scale(1,2);
+	letter-spacing: 4px;
 }
 
 hr{
@@ -76,11 +77,11 @@ hr{
 .boton-oscuro{
 	background-color: transparent !important;
 	color: black !important;
-	border: 2px solid black !important;
+	border: 2px solid var(--dark-color) !important;
 }
 
 .boton-oscuro:hover{
-	background-color: black !important;
+	background-color: var(--dark-color) !important;
 	color: white !important;
 }
 
@@ -103,6 +104,45 @@ hr{
 
 .fondo-naranja{
 	background-color: var(--naranja-color);
+}
+
+@keyframes moverderecha{
+	0%{
+		transform: translate(100%);
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes moverizquierda{
+	0%{
+		transform: translate(-100%);
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes moverarriba{
+	0%{
+		transform: translateY(100%);
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes moverabajo{
+	0%{
+		transform: translateY(-100%);
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
 }
 
 .list-item{
