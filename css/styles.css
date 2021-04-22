@@ -145,6 +145,13 @@ hr{
 	}
 }
 
+.zoom {
+	transition: .2s ease;
+}
+.zoom:hover {
+	transform : scale(1.5);
+}
+
 .list-item{
 	list-style-type: none;
 }
