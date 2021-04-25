@@ -10,14 +10,13 @@
 
 /*Paleta de colores*/
 :root{
-	--main-color: #2F6169;
-	--verde-color: #89E218;
-	--naranja-color: #EC571E;
-	--dark-color: #262626;
+	--main-color: #262626;
+	--rojo-color: #A6343E;
+	--amarillo-color: #FEA42C;
 }
 
 .fondo{
-	background-color: var(--dark-color);
+	background-color: var(--main-color);
 }
 
 .animacion-border{
@@ -25,7 +24,7 @@
 }
 
 .animacion-border:hover{
-	color: var(--naranja-color) !important;
+	color: var(--amarillo-color) !important;
 }
 
 .animacion-border:after{
@@ -40,7 +39,7 @@
 
 .animacion-border:hover:after{
     right: 0;
-    border-bottom: 3px solid var(--naranja-color);
+    border-bottom: 3px solid var(--amarillo-color);
 }
 
 header{
@@ -49,7 +48,7 @@ header{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	background-color: #669999;
+	background-color: var(--amarillo-color);
 }
 
 .separador{
@@ -58,6 +57,9 @@ header{
   height: 5%;
 }
 
+.efecto-hover:hover{
+	color: var(--rojo-color);
+}
 .text-strech{
 	transform:scale(1,2);
 	letter-spacing: 4px;
@@ -77,16 +79,16 @@ hr{
 .boton-oscuro{
 	background-color: transparent !important;
 	color: black !important;
-	border: 2px solid var(--dark-color) !important;
+	border: 2px solid var(--rojo-color) !important;
 }
 
 .boton-oscuro:hover{
-	background-color: var(--dark-color) !important;
+	background-color: var(--rojo-color) !important;
 	color: white !important;
 }
 
 .boton-blanco{
-	background-color: white !important;
+	background-color: var(--amarillo-color) !important;
 	color: black !important;
 	border: 2px solid transparent !important;
 }
@@ -94,16 +96,15 @@ hr{
 .boton-blanco:hover{
 	background-color: transparent !important;
 	color: white !important;
-	border: 2px solid white !important;
+	border: 2px solid var(--amarillo-color) !important;
 }
 
-
-.efecto-hover:hover{
-	color: var(--verde-color);
+.fondo-oferta{
+	background-color: var(--rojo-color);
 }
 
-.fondo-naranja{
-	background-color: var(--naranja-color);
+.linea-divisora{
+	border-top: 10px solid var(--amarillo-color);
 }
 
 @keyframes moverderecha{
@@ -182,7 +183,7 @@ hr{
 	display: block;
 	position: absolute;
 	bottom: -40px;
-	border-top: 20px solid var(--dark-color);
+	border-top: 20px solid var(--main-color);
 	border-right: 20px solid transparent;
 	border-left: 20px solid transparent;
 	border-bottom: 20px solid transparent;
@@ -206,5 +207,6 @@ hr{
 }
 
 .form-control:focus{
-	border: 2px solid var(--dark-color) !important;
+	border: 2px solid var(--main-color) !important;
 }
+
