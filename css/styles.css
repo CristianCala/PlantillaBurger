@@ -17,6 +17,12 @@
 
 .fondo{
 	background-color: var(--main-color);
+	transition: all 1000ms;
+}
+
+.menu-color{
+	background-color: var(--rojo-color);
+	transition: all 1000ms;
 }
 
 .animacion-border{
@@ -167,7 +173,6 @@ hr{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-color: #669999;
-
 }
 
 @media (min-width: 1px) and (max-width: 768px)  {

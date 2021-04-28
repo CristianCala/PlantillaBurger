@@ -2,12 +2,15 @@
 <html lang="es">
    <head>
       <meta charset="UTF-8">
+      <meta name="title" content="Plantilla demo burger">
+      <meta http-equiv="language" content="es-ve">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="author" content="Cristian Cala"/>
       <meta name="description" content="Plantilla de diseño web con temática de comida."/>
+      <meta http-equiv="refresh" content="100">
       <!-- Google Search verificator -->
-	  <meta name="google-site-verification" content="fJgT7XqRy5dTHxyOvuGzC02sb4CTkOv8Hc8FJ5oLyXQ" />
-      <meta name="keywords" content="Hamburguesa, Bar, Restaurant, Comida"/>
+	   <meta name="google-site-verification" content="fJgT7XqRy5dTHxyOvuGzC02sb4CTkOv8Hc8FJ5oLyXQ" />
+      <meta name="keywords" content="Hamburguesa, Bar, Restaurant, Comida, VilaBurger."/>
       <title>Plantilla demo Burger</title>
       <!-- Estilos propios -->
       <link rel="stylesheet" href="css/styles.css">
@@ -20,7 +23,7 @@
    </head>
 
    <body>
-      <nav class="navbar navbar-expand-lg fondo sticky-top">
+      <nav id="menu" class="navbar navbar-expand-lg fondo sticky-top">
          <div class="container-fluid ">
             <a class="navbar-brand d-block d-lg-none text-white " href="#">
                 <img src="LogoBurger.svg" width="180" height="110" alt="logo" loading="lazy">
@@ -38,7 +41,7 @@
                   </li>
                   <li class="nav-item d-none d-lg-block ">
                      <a class="navbar-brand active text-white " href="#">
-                     <img src="identidad.jpg" width="180" height="110" alt="logo" loading="lazy">
+                     <img src="LogoBurger.svg" width="180" height="110" alt="logo" loading="lazy">
                      </a>
                   </li>
                   <li class="nav-item mx-3">
@@ -101,7 +104,7 @@
          </section>
          <section class="fondo ">
             <div class="container text-center py-5 ">
-               <h3 class="text-white text-center py-4 text-strech display-6 ">PRUEBA NUESTRO MENÚ</h3>
+               <h3 class="text-white text-center py-4 text-strech display-6 font-weight-bold">PRUEBA NUESTRO MENÚ</h3>
                <hr>
             </div>
             <article class="container py-5">
@@ -278,7 +281,8 @@
          </section>
       </main>
 
-      <footer class="fondo text-center">
+      <footer class="fondo text-center ">
+         <div class="linea-divisora"></div>
          <div class="container py-3">
             <div class="row">
                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
@@ -302,20 +306,22 @@
                </div>
             </div>
          </div>
-         <div class="text-center p-3" style="background-color: white;">
+         <div class="text-center p-3 bg-light">
+            Diseñado por Cristian Cala
+            <br>
             Siempre con <span class="fas fa-heart text-danger"></span> para el cliente
          </div>
       </footer>
-
-      <script src="js/other.js" ></script>
       <script src="js/jquery-3.3.1.min.js"></script>
+      <!-- Js propio -->
+      <script src="js/other.js" ></script>
+      <!-- Datepicker -->
       <script src="js/rome.js"></script>
       <script src="js/main.js"></script>
       <!-- Bootstrap Bundle -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrty="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
       <!-- MDB -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js" ></script>
-      <!-- Para el datepicker -->
 
    </body>
 </html>

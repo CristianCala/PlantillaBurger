@@ -1,8 +1,9 @@
 .rd-container {
   display: none;
-  background-color: #fff;
-  padding: 10px;
+  background-color: white;
+  padding: 1rem;
   text-align: center;
+  border-radius: 4px;
   box-shadow: 0 15px 30px 0 rgba(0,0,0,.2);
 
 }
@@ -16,14 +17,28 @@
 .rd-month:last-child {
   margin-right: 0;
 }
+
+.rd-month-label{
+  background-color: var(--amarillo-color);
+  padding: 0.5rem;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+
+}
+.rd-days-head{
+  background-color: var(--main-color);
+  color: white;
+}
+
 .rd-back,
 .rd-next {
   cursor: pointer;
   border: none;
   outline: none;
   background: none;
-  padding: 0;
+  padding-top: 0.4rem;
   margin: 0;
+
 }
 .rd-back[disabled],
 .rd-next[disabled] {
@@ -62,7 +77,7 @@
 .rd-time-selected,
 .rd-time-option:hover {
   cursor: pointer;
-  background-color: var(--naranja-color);
+  background-color: var(--amarillo-color);
   color: #fff;
   border-radius: 50%;
 }
@@ -98,8 +113,4 @@
 }
 .rd-day-concealed {
   visibility: hidden;
-}
-
-.rd-days {
-  margin-top: 20px;
 }

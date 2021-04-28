@@ -1,3 +1,16 @@
+// Navbar
+window.onscroll = function() {
+  var y = window.scrollY;
+  var menu = document.getElementById('menu');
+  
+  if (y >= 400){
+	menu.classList.add("menu-color");
+  }
+  else{
+  	menu.classList.remove("menu-color");
+  }
+};
+
 window.onload = function() {
 	let animacion = document.getElementById('animacion-arriba');
 	let animacion2 = document.getElementById('animacion-abajo');
