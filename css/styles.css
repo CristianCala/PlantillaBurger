@@ -15,6 +15,10 @@
 	--amarillo-color: #FEA42C;
 }
 
+body{
+	font-family: 'Big+Shoulders+Display' !important;
+}
+
 .fondo{
 	background-color: var(--main-color);
 	transition: all 1000ms;
@@ -237,7 +241,7 @@ hr{
 .menu-card:after{
     content: url('../img/Estrella.svg');
     position:absolute;
-    left: -10%;
+    left: -15%;
     top: -10%;
 
 }
